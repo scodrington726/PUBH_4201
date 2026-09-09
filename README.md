@@ -1,4 +1,4 @@
-# PUBH 4201 Reproducible Environment Project
+# PUBH 4201 Reproducible Environment Lab 1
 
 This project demonstrates how to create and reproduce a Python analysis environment using Conda/Mamba. The project includes a Python analysis script, example patient data, and an `environment.yml` file that allows another user to recreate the computational environment.
 
