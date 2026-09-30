@@ -1,0 +1,2 @@
+## OpenAI Prompt: "I need you to standardized these values in the csv file attached: sample IDs, patient names, DOB formatting, sex values, enrollment site names, glucose values to mg/dL, blanks / inconsistent text entries.
+## Return a cleaned structured CSV with the same columns as the original. Do not invent information for ambiguous or missing values
