@@ -6,13 +6,12 @@ OpenAI was used to assist with completing Lab 4: Database-Driven Feature Table.
 
 ## How AI Was Used
 
-I used ChatGPT to help with:
+I used OpenAI to help with:
 
 - Troubleshooting my Python and Mamba environment in VS Code.
 - Understanding the database structure and identifying relationships between tables.
 - Developing Python scripts to execute SQL queries and construct a patient-level feature 
 - Checking missing values, patient counts, and duplicate records.
-- Creating the data dictionary and documenting the workflow.
 
 ## How I Verified the AI-Generated Work
 
