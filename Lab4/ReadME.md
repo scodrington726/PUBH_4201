@@ -33,7 +33,7 @@ The first query counts non-Silent mutations in TP53, KRAS, EGFR, STK11, and KEAP
 
 **Expected rows:** Up to 2,830 patient–gene combinations (566 patients × 5 genes), before excluding combinations with no qualifying mutations.
 
-**Actual rows:** 700.
+**Actual rows:** 700
 
 The query returns fewer rows because patients without qualifying mutations in a particular gene are not included in the grouped results.
 
@@ -43,7 +43,7 @@ The second query counts distinct patients by tissue source site and tumor stage.
 
 **Expected rows:** One row per observed site–stage combination.
 
-**Actual rows:** 142.
+**Actual rows:** 142
 
 The output contains 142 observed combinations rather than 566 patient-level rows because patients are grouped by their tissue source site and stage.
 
@@ -153,4 +153,4 @@ The feature table script produces `feature_table.tsv` in the project directory.
 
 ## Data Source
 
-TCGA Lung Adenocarcinoma PanCancer Atlas study, accessed through cBioPortal and provided for PUBH 4201 Lab 4.
+TCGA Lung Adenocarcinoma PanCancer Atlas study and accessed through cBioPortal 
