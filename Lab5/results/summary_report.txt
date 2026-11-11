@@ -1,0 +1,35 @@
+LAB 5: SCALABLE ANALYSIS WORKFLOW
+================================
+
+Total records: 626
+
+Records by dataset:
+data_source
+Lab 4    566
+Lab 3     60
+
+Missing values by column:
+sample_id             566
+patient_name          566
+dob                   566
+sex                    52
+enrollment_site       566
+glucose_value         568
+glucose_unit          566
+notes                 620
+data_source             0
+patient_id             60
+age_at_diagnosis      131
+stage                 114
+tissue_source_site     60
+tmb_nonsynonymous      60
+mut_TP53               60
+mut_KRAS               60
+mut_EGFR               60
+mut_STK11              60
+mut_KEAP1              60
+
+Data integration note:
+Lab 3 and Lab 4 have no matching patient IDs.
+The datasets were stacked rather than joined by patient.
+Therefore, rows do not represent matched patient records.

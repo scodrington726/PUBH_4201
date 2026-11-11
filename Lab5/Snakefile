@@ -1,0 +1,42 @@
+
+rule all:
+    input:
+        "results/summary_report.txt"
+
+
+rule clean_samples:
+    input:
+        csv="data/raw/messy_samples.csv",
+        script="scripts/clean_regex.py"
+    output:
+        "results/cleaned_samples.csv"
+    shell:
+        "python {input.script}"
+
+rule query_database:
+    input:
+        database="data/raw/cohort.db",
+        script="scripts/build_feature_table.py"
+    output:
+        "results/feature_table.tsv"
+    shell:
+        "python {input.script}"
+
+rule merge_tables:
+    input:
+        samples="results/cleaned_samples.csv",
+        features="results/feature_table.tsv",
+        script="scripts/merge_tables.py"
+    output:
+        "results/combined_table.csv"
+    shell:
+        "python {input.script}"
+
+rule summary_report:
+    input:
+        table="results/combined_table.csv",
+        script="scripts/summary_report.py"
+    output:
+        "results/summary_report.txt"
+    shell:
+        "python {input.script}"
